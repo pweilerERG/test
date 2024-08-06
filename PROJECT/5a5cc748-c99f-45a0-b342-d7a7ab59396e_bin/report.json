@@ -1,0 +1,326 @@
+{
+  "title": "New report",
+  "withNormalisation": false,
+  "withWeighting": false,
+  "sections": [
+    {
+      "index": 0,
+      "title": "Introduction",
+      "text": "This is a default template for the report of a project result. You can\nmodify this template in the report editor by\n\n\u003cp\u003e\u003cul\u003e\n\u003cli\u003echanging the text of the sections,\n\u003cli\u003eadding or removing sections,\n\u003cli\u003emoving sections around,\n\u003cli\u003eand selecting visual components that should be shown in the sections.\n\u003c/ul\u003e\u003c/p\u003e\n\nNote that you can also use HTML elements to format the section texts.\nAdditionally, you can export this report as an HTML page using the export\nbutton in the toolbar of the report view."
+    },
+    {
+      "index": 1,
+      "title": "Project variants",
+      "text": "This table shows the name and description of the project variants as defined in\nthe project setup. The variant names are used as the identifiers of the variants\nin the charts and tables and, thus, should be unique within a project.",
+      "componentId": "variant_description_table"
+    },
+    {
+      "index": 2,
+      "title": "Impact categories",
+      "text": "The table below shows the impact categories of the selected LCIA method of the\nproject. Note that you can easily create a new LCIA method from a set of\nexisting impact categories if you need a specific set of indicators in your\nproject.",
+      "componentId": "indicator_description_table"
+    },
+    {
+      "index": 3,
+      "title": "Impact assessment results",
+      "text": "The table below shows the impact assessment results of the different project\nvariants.",
+      "componentId": "impact_result_table"
+    },
+    {
+      "index": 4,
+      "title": "Variant comparison",
+      "text": "The chart below compares the results of the different project variant for the\nselected indicator. You can change the selection and the chart is dynamically\nupdated.",
+      "componentId": "indicator_bar_chart"
+    },
+    {
+      "index": 5,
+      "title": "Relative results",
+      "text": "The chart below shows the relative indicator results of the respective project\nvariants. For each indicator, the maximum result is set to 100% and the results\nof the other variants are displayed in relation to this result.",
+      "componentId": "relative_indicator_bar_chart"
+    }
+  ],
+  "processes": [],
+  "variants": [
+    {
+      "name": "Rice, at farm1",
+      "description": ""
+    },
+    {
+      "name": "Rice, at farm1 (2)",
+      "description": ""
+    }
+  ],
+  "parameters": [
+    {
+      "redef": {
+        "name": "yield_low_global",
+        "description": "",
+        "value": 0.8,
+        "isProtected": false,
+        "id": 193952
+      },
+      "variantValues": {
+        "Rice, at farm1": 0.8,
+        "Rice, at farm1 (2)": 1.5
+      }
+    }
+  ],
+  "indicators": [
+    {
+      "impact": {
+        "referenceUnit": "kg SO2 eq",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "6037e49a-4adb-3a31-a23d-c82569e3242f",
+        "id": 160552,
+        "name": "Acidification",
+        "version": 4295032834,
+        "lastChange": 1715201593979,
+        "type": "IMPACT_CATEGORY"
+      }
+    },
+    {
+      "impact": {
+        "referenceUnit": "kg N eq",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "8c5a0a4c-ea1a-33b6-a973-43988d1b61f4",
+        "id": 160589,
+        "name": "Eutrophication",
+        "version": 4295032834,
+        "lastChange": 1715201593965,
+        "type": "IMPACT_CATEGORY"
+      }
+    },
+    {
+      "impact": {
+        "referenceUnit": "CTUeco",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "2888aa63-f97b-3407-b56e-4d103dc1246d",
+        "id": 156152,
+        "name": "Freshwater ecotoxicity",
+        "version": 4295032834,
+        "lastChange": 1715201594128,
+        "type": "IMPACT_CATEGORY"
+      }
+    },
+    {
+      "impact": {
+        "referenceUnit": "kg CO2 eq",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "d21c7132-2861-3d6b-9bc8-590627a087b4",
+        "id": 160064,
+        "name": "Global warming",
+        "version": 4295032835,
+        "lastChange": 1722437457474,
+        "type": "IMPACT_CATEGORY"
+      }
+    },
+    {
+      "impact": {
+        "referenceUnit": "CTUcancer",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "0a8ce516-20fa-3b01-bbbe-c0b8cb4e4c63",
+        "id": 158222,
+        "name": "Human health - cancer",
+        "version": 4295032834,
+        "lastChange": 1715201594119,
+        "type": "IMPACT_CATEGORY"
+      }
+    },
+    {
+      "impact": {
+        "referenceUnit": "CTUnoncancer",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "4635115b-b3bd-3883-825b-fb0eab57381f",
+        "id": 158815,
+        "name": "Human health - non-cancer",
+        "version": 4295032834,
+        "lastChange": 1715201594051,
+        "type": "IMPACT_CATEGORY"
+      }
+    },
+    {
+      "impact": {
+        "referenceUnit": "PM 2.5 eq",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "cfb3b79b-2141-3357-91d4-b8e3f00586d4",
+        "id": 160522,
+        "name": "Human health - particulate matter",
+        "version": 4295032834,
+        "lastChange": 1715201593996,
+        "type": "IMPACT_CATEGORY"
+      }
+    },
+    {
+      "impact": {
+        "referenceUnit": "kg CFC-11 eq",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "264097d3-cd2c-3d75-998a-f170ab543c9a",
+        "id": 160019,
+        "name": "Ozone depletion",
+        "version": 4295032834,
+        "lastChange": 1715201594044,
+        "type": "IMPACT_CATEGORY"
+      }
+    },
+    {
+      "impact": {
+        "referenceUnit": "kg O3 eq",
+        "direction": "OUTPUT",
+        "category": 156151,
+        "refId": "cdced312-e381-31c7-9a62-309fa62b3ba2",
+        "id": 160157,
+        "name": "Smog formation",
+        "version": 4295032834,
+        "lastChange": 1715201594005,
+        "type": "IMPACT_CATEGORY"
+      }
+    }
+  ],
+  "results": [
+    {
+      "indicatorId": "6037e49a-4adb-3a31-a23d-c82569e3242f",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 0.0023892727347633786,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 0.0012742787918738033,
+          "contributions": {}
+        }
+      ]
+    },
+    {
+      "indicatorId": "8c5a0a4c-ea1a-33b6-a973-43988d1b61f4",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 0.9865678089306494,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 0.5261694980963463,
+          "contributions": {}
+        }
+      ]
+    },
+    {
+      "indicatorId": "2888aa63-f97b-3407-b56e-4d103dc1246d",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 25.420069423250677,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 13.557370359067004,
+          "contributions": {}
+        }
+      ]
+    },
+    {
+      "indicatorId": "d21c7132-2861-3d6b-9bc8-590627a087b4",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 301.4952873895986,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 160.79748660778594,
+          "contributions": {}
+        }
+      ]
+    },
+    {
+      "indicatorId": "0a8ce516-20fa-3b01-bbbe-c0b8cb4e4c63",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 5.3574351704825376E-8,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 2.8572987575906902E-8,
+          "contributions": {}
+        }
+      ]
+    },
+    {
+      "indicatorId": "4635115b-b3bd-3883-825b-fb0eab57381f",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 9.951967966647527E-6,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 5.307716248878683E-6,
+          "contributions": {}
+        }
+      ]
+    },
+    {
+      "indicatorId": "cfb3b79b-2141-3357-91d4-b8e3f00586d4",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 1.391001762899297E-4,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 7.418676068796253E-5,
+          "contributions": {}
+        }
+      ]
+    },
+    {
+      "indicatorId": "264097d3-cd2c-3d75-998a-f170ab543c9a",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 9.870806392366679E-9,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 5.2644300759288934E-9,
+          "contributions": {}
+        }
+      ]
+    },
+    {
+      "indicatorId": "cdced312-e381-31c7-9a62-309fa62b3ba2",
+      "variantResults": [
+        {
+          "variant": "Rice, at farm1",
+          "totalAmount": 0.052542825560348796,
+          "contributions": {}
+        },
+        {
+          "variant": "Rice, at farm1 (2)",
+          "totalAmount": 0.028022840298852714,
+          "contributions": {}
+        }
+      ]
+    }
+  ],
+  "addedValues": [],
+  "netCosts": []
+}
